@@ -1,0 +1,36 @@
+LATO CLIENT
+
+
+LATO SERVER
+
+aggiungere un id: 
+  - fs.readFile(
+    "./database.json",
+    { encoding: "utf-8" },
+    function (err, data) {
+      if (err) {
+      res.status(500).send("Errore nella lettura del file");
+      return;
+    }
+
+    let utenti = JSON.parse(data);
+    let id = "" + Object.keys(data).length
+
+  - mi arriva una stringa '["USERNAME", "PASSWORD"]' --> let utente = (req.body);
+  - JSON.parse(utente);
+
+    let nuovoUtente = {
+        "username": utente[0],
+        "password": utente[1],
+        "monete": []
+    }
+    utenti[id] = nuovoUtente;
+
+    fs.writeFile("./database.json", JSON.stringify(utenti, null, 2), function (err) {
+      if (err) {
+        res.status(500).send("Errore nel salvataggio del file");
+        return;
+      }
+
+      res.send("Moneta aggiunta correttamente");
+    });

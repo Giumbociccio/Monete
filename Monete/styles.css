@@ -1,0 +1,39 @@
+body {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+form {
+  text-align: center !important;
+  border-radius: 10px;
+  padding: 16px;
+  width: 50vw !important;
+  min-width: 300px;
+  max-width: 700px !important;
+  margin: auto;
+  background-color: white;
+}
+
+.form-control,
+.form-select {
+  text-align: center;
+  margin: auto;
+  background-color: inherit !important;
+  border: solid 1px rgb(160, 160, 160);
+  max-width: 90%;
+}
+
+nav {
+  margin: auto;
+  margin-top: 16px;
+  text-align: center;
+}
