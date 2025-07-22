@@ -34,3 +34,16 @@ aggiungere un id:
 
       res.send("Moneta aggiunta correttamente");
     });
+
+//per filtrare gli elementi
+
+const { value, effigy } = req.query;
+
+let risultati = coins;
+
+if (value) {
+  risultati = risultati.filter(coin => coin.value === value);
+}
+if (effigy) {
+  risultati = risultati.filter(coin => coin.effigy.toLowerCase().includes(effigy.toLowerCase()));
+}
