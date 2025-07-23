@@ -16,24 +16,23 @@ app.get("/", function (req, res) {
 });
 
 app.get("/coins", function (req, res) {
-  const { value, effigy } = req.query; 
-  fs.readFile(
+const { value, effigy } = req.query;
+fs.readFile(
     "./collezione.json",
     { encoding: "utf-8" },
     function (err, coins) {
+let risultati = JSON.parse(coins);
 
-				let risultati = JSON.parse(coins);
-
-				if (value) {
-  				risultati = risultati.filter(coin => coin.value === value);
-				}
-				if (effigy) {
-  				risultati = risultati.filter(coin => coin.effigy.toLowerCase().includes(effigy.toLowerCase()));
-				}
-    }
-      res.json(risultati)
-    }
-  );
+if (value) {
+risultati = risultati.filter(coin => coin.value === value);
+}
+if (effigy) {
+risultati = risultati.filter(coin => coin.effigy.toLowerCase().includes(effigy.toLowerCase()));
+}
+}
+res.json(risultati)
+}
+);
 });
 
 app.post("/coins", function (req, res) {
@@ -63,36 +62,35 @@ app.post("/coins", function (req, res) {
 });
 
 app.get("/years", function (req, res) {
-	const annoCorrente = new Date().getFullYear();
-	const { startYear, endYear = annoCorrente, year } = req.query;
-	fs.readFile(
-    "./collezione.json",
-    { encoding: "utf-8" },
-    function (err, coins) {
-				let risultati = JSON.parse(coins);
-				risultati.sort((a, b) => a.anno - b.anno);
-
-				if(year) {
-					risultati.filter(coin => coin.year === year)
-				} else if (startYear) {
-					risultati.filter(coin => coin.year >= startYear && coin.year <= endYear);
-				}
-				res.json(risultati);
-			});	
+const annoCorrente = new Date().getFullYear();
+const { startYear, endYear = annoCorrente, year } = req.query;
+fs.readFile(
+   "./collezione.json",
+   { encoding: "utf-8" },
+   function (err, coins) {
+			let risultati = JSON.parse(coins);
+			risultati.sort((a, b) => a.anno - b.anno);
+if(year) {
+risultati.filter(coin => coin.year === year)
+} else if (startYear) {
+risultati.filter(coin => coin.year >= startYear && coin.year <= endYear);
+}
+res.json(risultati);
+});	
 });
 
 app.get("/countries", function (req, res) {
-	const { country } = req.query;
-	fs.readFile(
-    "./collezione.json",
-    { encoding: "utf-8" },
-    function (err, coins) {
-		let risultati = JSON.parse(coins);
-		if(country){
-			risultati.filter(coin => coin.state.commoneName === country || coin.state.officialName === country);
-		}
-		res.json(risultati);
-	})
+const { country } = req.query;
+fs.readFile(
+"./collezione.json",
+{ encoding: "utf-8" },
+function (err, coins) {
+let risultati = JSON.parse(coins);
+if(country){
+risultati.filter(coin => coin.state.commoneName === country || coin.state.officialName === country);
+}
+res.json(risultati);
+})
 });
 
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
