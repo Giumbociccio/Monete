@@ -82,32 +82,17 @@ app.get("/years", function (req, res) {
 });
 
 app.get("/countries", function (req, res) {
-
-});
-app.get("/countries/:country", function (req, res) {
-  let country = req.params.country;
-  let result = [];
-  fs.readFile(
+	const { country } = req.query;
+	fs.readFile(
     "./collezione.json",
     { encoding: "utf-8" },
     function (err, coins) {
-      for (let coin of coins) {
-        /*
-        if (
-          coin.state.commonName == country ||
-          coin.state.officialName == country
-        ) {
-          let moneta = {
-            value: coin.value,
-            effigy: coin.effigy,
-            year: coin.year,
-          };
-
-          result.push(moneta);
-        }
-        */
-      }
-    }
-  );
+		let risultati = JSON.parse(coins);
+		if(country){
+			risultati.filter(coin => coin.state.commoneName === country || coin.state.officialName === country);
+		}
+		res.json(risultati);
+	})
 });
+
 app.listen(port, () => console.log(`Hello world app listening on port ${port}!`))
