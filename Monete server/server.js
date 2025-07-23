@@ -55,7 +55,7 @@ app.post("/coins", function (req, res) {
           return;
         }
 
-        res.send("Moneta aggiunta correttamente");
+        res.status(201).json({ messaggio: "Moneta aggiunta correttamente" });
       });
     }
   );
