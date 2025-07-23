@@ -3,7 +3,7 @@ LATO CLIENT
 
 LATO SERVER
 
-aggiungere un id: 
+// aggiungere un id: 
   - fs.readFile(
     "./database.json",
     { encoding: "utf-8" },
@@ -35,7 +35,7 @@ aggiungere un id:
       res.send("Moneta aggiunta correttamente");
     });
 
-//per filtrare gli elementi
+// per filtrare gli elementi
 
 const { value, effigy } = req.query;
 
@@ -47,3 +47,6 @@ if (value) {
 if (effigy) {
   risultati = risultati.filter(coin => coin.effigy.toLowerCase().includes(effigy.toLowerCase()));
 }
+
+- forse si può fare direttamente tutto in app.get("/coins") e mettere i parametri
+- const { value, effigy, year, startYear, endYear, country } = req.query;
