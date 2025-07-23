@@ -16,10 +16,24 @@ app.get("/", function (req, res) {
 });
 
 app.get("/coins", function (req, res) {
-  fs.readFile("./collezione.json", { encoding: "utf-8" }, function (err, data) {
-    let coins = JSON.parse(data);
-    res.send(coins);
-  });
+  const { value, effigy } = req.query; 
+  fs.readFile(
+    "./collezione.json",
+    { encoding: "utf-8" },
+    function (err, coins) {
+
+				let risultati = JSON.parse(coins);
+
+				if (value) {
+  				risultati = risultati.filter(coin => coin.value === value);
+				}
+				if (effigy) {
+  				risultati = risultati.filter(coin => coin.effigy.toLowerCase().includes(effigy.toLowerCase()));
+				}
+    }
+      res.send(risultati)
+    }
+  );
 });
 
 app.post("/coins", function (req, res) {
@@ -44,28 +58,6 @@ app.post("/coins", function (req, res) {
 
         res.send("Moneta aggiunta correttamente");
       });
-    }
-  );
-});
-
-app.get("/coins/:coin", function (req, res) {
-  let ricerca = req.body.split(" ")
-  let toSend = ""
-  fs.readFile(
-    "./collezione.json",
-    { encoding: "utf-8" },
-    function (err, coins) {
-      for (let coin of coins) {
-        let effige = coin.effigy.split(" ")
-        for (let eff of effige) {
-          for (let el of ricerca) {
-            if (el == eff) {
-              toSend += moneta;
-            }
-          }
-        }
-      }
-      res.send(toSend)
     }
   );
 });
