@@ -31,7 +31,7 @@ app.get("/coins", function (req, res) {
   				risultati = risultati.filter(coin => coin.effigy.toLowerCase().includes(effigy.toLowerCase()));
 				}
     }
-      res.send(risultati)
+      res.json(risultati)
     }
   );
 });
@@ -63,12 +63,24 @@ app.post("/coins", function (req, res) {
 });
 
 app.get("/years", function (req, res) {
+	const annoCorrente = new Date().getFullYear();
+	const { startYear, endYear = annoCorrente, year } = req.query;
+	fs.readFile(
+    "./collezione.json",
+    { encoding: "utf-8" },
+    function (err, coins) {
+				let risultati = JSON.parse(coins);
+				risultati.sort((a, b) => a.anno - b.anno);
 
+				if(year) {
+					risultati.filter(coin => coin.year === year)
+				} else if (startYear) {
+					risultati.filter(coin => coin.year >= startYear && coin.year <= endYear);
+				}
+				res.json(risultati);
+			});	
 });
-app.get("/years/:year", function (req, res) {
-  let year = req.params.year;
 
-});
 app.get("/countries", function (req, res) {
 
 });
