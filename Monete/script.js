@@ -108,18 +108,17 @@ $(document).ready(function () {
           method: "POST",
           contentType: "application/json",
           data: JSON.stringify(moneta),
-          success: function (data) {
-            $("#submit").text("Moneta aggiunta correttamente");
+          success: function (response) {
+            $('#submit').text(response.messaggio);
             $("#inserisci").show()
-            console.log("Collezione: ", data);
 
-            moneteAPI = API;
           },
           error: function (err) {
             console.error("Errore:", err);
             alert("Errore: ", err)
           }
         });
+            moneteAPI = API;
 
 
       });
