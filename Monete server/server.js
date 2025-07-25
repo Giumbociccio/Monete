@@ -29,7 +29,6 @@ risultati = risultati.filter(coin => coin.value === value);
 if (effigy) {
 risultati = risultati.filter(coin => coin.effigy.toLowerCase().includes(effigy.toLowerCase()));
 }
-}
 res.json(risultati)
 }
 );
