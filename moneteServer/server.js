@@ -112,13 +112,4 @@ app.get("/countries", function (req, res) {
   );
 });
 
-// Rotta catch-all: rimanda sempre index.html (per SPAs o frontend completi)
-// MA esclude le rotte API per evitare errori
-app.get("*", (req, res) => {
-  if (req.path.startsWith("/coins") || req.path.startsWith("/years") || req.path.startsWith("/countries")) {
-    return res.status(404).send("API route not found");
-  }
-  res.sendFile(path.join(__dirname, "../Monete/index.html"));
-});
-
 app.listen(PORT, () => console.log(`Hello world app listening on port ${PORT}!`));
