@@ -94,7 +94,8 @@ app.get("/years", function (req, res) {
 });
 
 app.get("/countries", function (req, res) {
-  const { country } = req.query;
+  const { country } = req.query ? req.query.country.toLowerCase() : undefined;
+
   fs.readFile(
     "./collezione.json",
     { encoding: "utf-8" },
@@ -105,11 +106,14 @@ app.get("/countries", function (req, res) {
       }
       let risultati = JSON.parse(coins);
       if (country) {
-        risultati = risultati.filter(coin => coin.state.commoneName === country || coin.state.officialName === country);
+        risultati = risultati.filter(coin => (
+          coin.state.commonName.toLowerCase() === country || coin.state.officialName.toLowerCase() === country
+        ));
       }
       res.json(risultati);
     }
   );
 });
+
 
 app.listen(PORT, () => console.log(`Hello world app listening on port ${PORT}!`));
