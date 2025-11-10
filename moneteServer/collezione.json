@@ -5,8 +5,8 @@
       "officialName": "Italia"
     },
     "value": "0.01",
-    "effigy": "Castel del Monte",
-    "year": "2015"
+    "effigy": "Castel del Monte (Puglia, Italia)",
+    "year": "2002"
   },
   {
     "state": {
@@ -14,8 +14,8 @@
       "officialName": "Italia"
     },
     "value": "0.02",
-    "effigy": "Mole Antonelliana di Torino",
-    "year": "2017"
+    "effigy": "Mole Antonelliana (Torino, Italia)",
+    "year": "2002"
   },
   {
     "state": {
@@ -23,8 +23,8 @@
       "officialName": "Italia"
     },
     "value": "0.05",
-    "effigy": "Anfiteatro Flavio",
-    "year": "2018"
+    "effigy": "Colosseo (Roma, Italia)",
+    "year": "2002"
   },
   {
     "state": {
@@ -32,8 +32,8 @@
       "officialName": "Italia"
     },
     "value": "0.10",
-    "effigy": "Nascita di Venere, Sandro Botticelli",
-    "year": "2006"
+    "effigy": "Nascita di Venere - Sandro Botticelli (1482-1486, Italia)",
+    "year": "2002"
   },
   {
     "state": {
@@ -41,8 +41,8 @@
       "officialName": "Italia"
     },
     "value": "0.20",
-    "effigy": "Forme uniche di continuità nello spazio, Umberto Boccioni",
-    "year": "2021"
+    "effigy": "Forme uniche di continuità nello spazio - Umberto Boccioni (1913, Italia)",
+    "year": "2002"
   },
   {
     "state": {
@@ -50,7 +50,7 @@
       "officialName": "Italia"
     },
     "value": "0.50",
-    "effigy": "Monumento equestre a Marco Aurelio, Campidoglio",
+    "effigy": "Marco Aurelio (Imperatore romano), Statua equestre di Marco Aurelio (Campidoglio, Roma, Italia), Uomo a cavallo",
     "year": "2002"
   },
   {
@@ -59,7 +59,7 @@
       "officialName": "Italia"
     },
     "value": "1.00",
-    "effigy": "Uomo Vitruviano, Leonardo da Vinci",
+    "effigy": "Uomo Vitruviano - Leonardo da Vinci (1490, Venezia, Italia)",
     "year": "2002"
   },
   {
@@ -68,7 +68,7 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Profilo Dante Alighieri",
+    "effigy": "Dante Alighieri - Raffaello Sanzio (1510-1511, Città del Vaticano)",
     "year": "2002"
   },
   {
@@ -77,7 +77,7 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Costituzione Europea",
+    "effigy": "1° anniversario - Firma della Costituzione Europea",
     "year": "2005"
   },
   {
@@ -86,7 +86,7 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "150° Unità d'Italia",
+    "effigy": "150° anniversario - Unità d'Italia",
     "year": "2011"
   },
   {
@@ -95,7 +95,7 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Profilo di Giovanni Pascoli",
+    "effigy": "100° anniversario - Morte di Giovanni Pascoli",
     "year": "2012"
   },
   {
@@ -104,7 +104,16 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Dante Alighieri (montagna del purgatorio)",
+    "effigy": "700° anniversario - Nascita di Giovanni Boccaccio",
+    "year": "2013"
+  },
+  {
+    "state": {
+      "commonName": "Italy",
+      "officialName": "Italia"
+    },
+    "value": "2.00",
+    "effigy": "750° anniversario - Nascita di Dante Alighieri (montagna del purgatorio)",
     "year": "2015"
   },
   {
@@ -113,7 +122,7 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Dama con l’ermellino, Leonardo da Vinci",
+    "effigy": "500° anniversario - Morte di Leonardo da Vinci (Dama con ermellino)",
     "year": "2019"
   },
   {
@@ -122,7 +131,7 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Profilo di Maria Montessori",
+    "effigy": "150° anniversario - Nascita di Maria Montessori",
     "year": "2020"
   },
   {
@@ -131,7 +140,7 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Vigili del Fuoco",
+    "effigy": "80° anniversario - Corpo nazionale dei Vigili del Fuoco",
     "year": "2020"
   },
   {
@@ -140,7 +149,7 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Roma Capitale",
+    "effigy": "150° anniversario - Istituzione di Roma capitale d'Italia",
     "year": "2021"
   },
   {
@@ -149,7 +158,7 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Falcone-Borsellino",
+    "effigy": "30° anniversario - Morte dei giudici Giovanni Falcone e Paolo Borsellino",
     "year": "2022"
   },
   {
@@ -158,22 +167,13 @@
       "officialName": "Italia"
     },
     "value": "2.00",
-    "effigy": "Profilo di Alessandro Manzoni",
-    "year": "2023"
-  },
-  {
-    "state": {
-      "commonName": "Italy",
-      "officialName": "Italia"
-    },
-    "value": "2.00",
-    "effigy": "100° Anniversario Aeronautica Militare",
+    "effigy": "100° anniversario - Aeronautica Militare",
     "year": "2023"
   },
   {
     "state": {
       "commonName": "San Marino",
-      "officialName": "San Marino"
+      "officialName": "Serenissima Repubblica di San Marino"
     },
     "value": "1.00",
     "effigy": "Stemma",
@@ -182,7 +182,7 @@
   {
     "state": {
       "commonName": "Vatican City",
-      "officialName": "Vaticano"
+      "officialName": "Stato della città del Vaticano"
     },
     "value": "0.50",
     "effigy": "Stemma",
@@ -190,20 +190,29 @@
   },
   {
     "state": {
+      "commonName": "Vatican City",
+      "officialName": "Stato della città del Vaticano"
+    },
+    "value": "2.00",
+    "effigy": "150° anniversario - Morte di Alessandro Manzoni",
+    "year": "2023"
+  },
+  {
+    "state": {
       "commonName": "Malta",
-      "officialName": "Malta"
+      "officialName": "Repubblika ta' Malta"
     },
     "value": "1.00",
-    "effigy": "Stella",
+    "effigy": "Croce, Stella",
     "year": "2019"
   },
   {
     "state": {
       "commonName": "Monaco",
-      "officialName": ""
+      "officialName": "Principauté de Monaco"
     },
     "value": "2.00",
-    "effigy": "profilo",
+    "effigy": "Alberto II (Principe di Monaco)",
     "year": "2016"
   },
   {
@@ -211,8 +220,17 @@
       "commonName": "Spain",
       "officialName": "España"
     },
+    "value": "0.02",
+    "effigy": "Cattedrale di Santiago di Compostela (Galizia, Spagna)",
+    "year": "2001"
+  },
+  {
+    "state": {
+      "commonName": "Spain",
+      "officialName": "España"
+    },
     "value": "0.05",
-    "effigy": "Sagrada Familia",
+    "effigy": "Cattedrale di Santiago di Compostela (Galizia, Spagna)",
     "year": "2000"
   },
   {
@@ -221,8 +239,8 @@
       "officialName": "España"
     },
     "value": "0.10",
-    "effigy": "Volto Cervantes",
-    "year": "2005"
+    "effigy": "Miguel de Cervantes (scrittore spagnolo)",
+    "year": "1999"
   },
   {
     "state": {
@@ -230,7 +248,7 @@
       "officialName": "España"
     },
     "value": "0.20",
-    "effigy": "Volto Cervantes",
+    "effigy": "Miguel de Cervantes (scrittore spagnolo)",
     "year": "2008"
   },
   {
@@ -239,7 +257,7 @@
       "officialName": "España"
     },
     "value": "0.50",
-    "effigy": "Volto Cervantes",
+    "effigy": "Miguel de Cervantes (scrittore spagnolo)",
     "year": "2000"
   },
   {
@@ -248,7 +266,7 @@
       "officialName": "España"
     },
     "value": "1.00",
-    "effigy": "Volto",
+    "effigy": "Juan Carlos I (re di Spagna)",
     "year": "2003"
   },
   {
@@ -257,7 +275,7 @@
       "officialName": "España"
     },
     "value": "2.00",
-    "effigy": "Volto",
+    "effigy": "Juan Carlos I (re di Spagna)",
     "year": "1999"
   },
   {
@@ -266,7 +284,7 @@
       "officialName": "España"
     },
     "value": "2.00",
-    "effigy": "acquedotto-ponte",
+    "effigy": "Patrimonio dell'umanità UNESCO - Acquedotto di Segovia",
     "year": "2016"
   },
   {
@@ -302,7 +320,7 @@
       "officialName": "Portugal"
     },
     "value": "1.00",
-    "effigy": "Volto",
+    "effigy": "Stemma",
     "year": "2002"
   },
   {
@@ -311,7 +329,7 @@
       "officialName": "Deutschland"
     },
     "value": "0.05",
-    "effigy": "foglia di quercia con ghianda",
+    "effigy": "Foglie di quercia",
     "year": "2002"
   },
   {
@@ -320,7 +338,7 @@
       "officialName": "Deutschland"
     },
     "value": "0.10",
-    "effigy": "tempio 6 colonne",
+    "effigy": "Porta di Brandeburgo (Berlino, Germania)",
     "year": "2002"
   },
   {
@@ -329,7 +347,7 @@
       "officialName": "Deutschland"
     },
     "value": "0.20",
-    "effigy": "tempio 6 colonne",
+    "effigy": "Porta di Brandeburgo (Berlino, Germania)",
     "year": "2006"
   },
   {
@@ -338,7 +356,7 @@
       "officialName": "Deutschland"
     },
     "value": "0.50",
-    "effigy": "tempio 6 colonne",
+    "effigy": "Porta di Brandeburgo (Berlino, Germania)",
     "year": "2002"
   },
   {
@@ -347,7 +365,7 @@
       "officialName": "Deutschland"
     },
     "value": "1.00",
-    "effigy": "Aquila",
+    "effigy": "Aquila (araldica)",
     "year": "2002"
   },
   {
@@ -356,7 +374,7 @@
       "officialName": "Deutschland"
     },
     "value": "2.00",
-    "effigy": "Aquila",
+    "effigy": "Aquila (araldica)",
     "year": "2002"
   },
   {
@@ -365,7 +383,7 @@
       "officialName": "Deutschland"
     },
     "value": "2.00",
-    "effigy": "Niedersachsen Chiesa di San Michele",
+    "effigy": "Chiesa di San Michele a Hildesheim, Bassa Sassonia (Niedersachsen)",
     "year": "2014"
   },
   {
@@ -374,7 +392,7 @@
       "officialName": "Deutschland"
     },
     "value": "2.00",
-    "effigy": "Palazzo Hessen",
+    "effigy": "Chiesa di San Paolo a Francoforte sul Meno, Assia",
     "year": "2015"
   },
   {
@@ -383,7 +401,7 @@
       "officialName": "Deutschland"
     },
     "value": "2.00",
-    "effigy": "Palazzo Berlin",
+    "effigy": "Berlino",
     "year": "2018"
   },
   {
@@ -392,7 +410,7 @@
       "officialName": "Deutschland"
     },
     "value": "2.00",
-    "effigy": "Von Warschau",
+    "effigy": "50° anniversario - Genuflessione di Varsavia (Von Warschau)",
     "year": "2020"
   },
   {
@@ -401,8 +419,17 @@
       "officialName": "Deutschland"
     },
     "value": "2.00",
-    "effigy": "50° anniversario del Trattato dell'Eliseo Francia-Germania",
+    "effigy": "50° anniversario - Firma del Trattato dell'Eliseo",
     "year": "2013"
+  },
+  {
+    "state": {
+      "commonName": "France",
+      "officialName": "République Française"
+    },
+    "value": "0.01",
+    "effigy": "Maschera",
+    "year": "2000"
   },
   {
     "state": {
@@ -411,7 +438,16 @@
     },
     "value": "0.05",
     "effigy": "Maschera",
-    "year": "2009"
+    "year": "2007"
+  },
+  {
+    "state": {
+      "commonName": "France",
+      "officialName": "République Française"
+    },
+    "value": "0.05",
+    "effigy": "Maschera",
+    "year": "1999"
   },
   {
     "state": {
@@ -419,8 +455,8 @@
       "officialName": "République Française"
     },
     "value": "0.10",
-    "effigy": "Donna con elmo",
-    "year": "2001"
+    "effigy": "Seminatrice",
+    "year": "2000"
   },
   {
     "state": {
@@ -428,7 +464,7 @@
       "officialName": "République Française"
     },
     "value": "0.20",
-    "effigy": "Donna con elmo",
+    "effigy": "Seminatrice",
     "year": "2000"
   },
   {
@@ -437,7 +473,7 @@
       "officialName": "République Française"
     },
     "value": "0.50",
-    "effigy": "Donna con elmo",
+    "effigy": "Seminatrice",
     "year": "2001"
   },
   {
@@ -446,7 +482,7 @@
       "officialName": "République Française"
     },
     "value": "0.50",
-    "effigy": "Marie Curie",
+    "effigy": "Marie Curie (fisica polacca-francese)",
     "year": "2024"
   },
   {
@@ -454,8 +490,26 @@
       "commonName": "France",
       "officialName": "République Française"
     },
+    "value": "1.00",
+    "effigy": "Égalité Fraternité Liberté J.Jimenez RF",
+    "year": "2000"
+  },
+  {
+    "state": {
+      "commonName": "France",
+      "officialName": "République Française"
+    },
     "value": "2.00",
-    "effigy": "50° anniversario del Trattato dell'Eliseo Francia-Germania",
+    "effigy": "Égalité Fraternité Liberté J.Jimenez RF",
+    "year": "1999"
+  },
+  {
+    "state": {
+      "commonName": "France",
+      "officialName": "République Française"
+    },
+    "value": "2.00",
+    "effigy": "50° anniversario - Firma del Trattato dell'Eliseo",
     "year": "2013"
   }
 ]
